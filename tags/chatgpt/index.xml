@@ -1,10 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>All Posts - DSucceed</title>
-        <link>https://dsucceed.github.io/blog/posts/</link>
-        <description>All Posts | DSucceed</description>
+        <title>chatgpt - Tag - DSucceed</title>
+        <link>https://dsucceed.github.io/blog/tags/chatgpt/</link>
+        <description>chatgpt - Tag - DSucceed</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>dsucceeded@gmail.com (Sandeep Undrakonda)</managingEditor>
-            <webMaster>dsucceeded@gmail.com (Sandeep Undrakonda)</webMaster><lastBuildDate>Wed, 04 Mar 2020 15:58:26 &#43;0800</lastBuildDate><atom:link href="https://dsucceed.github.io/blog/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>dsucceeded@gmail.com (Sandeep Undrakonda)</webMaster><lastBuildDate>Wed, 04 Mar 2020 15:58:26 &#43;0800</lastBuildDate><atom:link href="https://dsucceed.github.io/blog/tags/chatgpt/" rel="self" type="application/rss+xml" /><item>
     <title>Beware the Unleashed Writer: The Fearful Power of ChatGPT&#39;s Automated Articles</title>
     <link>https://dsucceed.github.io/blog/posts/beware-the-unleashed-writer-the-fearful-power-of-chatgpts-automated-articles/</link>
     <pubDate>Wed, 04 Mar 2020 15:58:26 &#43;0800</pubDate>
