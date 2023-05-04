@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>All Posts - DSucceed</title>
+        <link>https://dsucceed.github.io/blog/posts/</link>
+        <description>All Posts | DSucceed</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>dsucceeded@gmail.com (Sandeep Undrakonda)</managingEditor>
+            <webMaster>dsucceeded@gmail.com (Sandeep Undrakonda)</webMaster><lastBuildDate>Wed, 04 Mar 2020 15:58:26 &#43;0800</lastBuildDate><atom:link href="https://dsucceed.github.io/blog/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Beware the Unleashed Writer: The Fearful Power of ChatGPT&#39;s Automated Articles</title>
+    <link>https://dsucceed.github.io/blog/posts/beware-the-unleashed-writer-the-fearful-power-of-chatgpts-automated-articles/</link>
+    <pubDate>Wed, 04 Mar 2020 15:58:26 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dsucceed.github.io/blog/posts/beware-the-unleashed-writer-the-fearful-power-of-chatgpts-automated-articles/</guid>
+    <description><![CDATA[The Rise of Automated Article Writing with ChatGPT Have you ever wondered if a machine or a human wrote an article you&rsquo;re reading? With ChatGPT, the answer is both. This technology has revolutionized the world of writing and made it accessible to everyone.
+The Power of Language Models ChatGPT, based on GPT-3.5 architecture, is a large language model that uses machine learning to generate human-like text. Trained on a massive amount of data, including books, articles, and websites, ChatGPT is capable of producing a wide range of texts, from emails to novels.]]></description>
+</item>
+</channel>
+</rss>
