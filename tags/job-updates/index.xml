@@ -1,0 +1,18 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Job Updates - Tag - DSucceed</title>
+        <link>https://dsucceed.github.io/blog/tags/job-updates/</link>
+        <description>Job Updates - Tag - DSucceed</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>dsucceeded@gmail.com (Sandeep Undrakonda)</managingEditor>
+            <webMaster>dsucceeded@gmail.com (Sandeep Undrakonda)</webMaster><lastBuildDate>Wed, 10 May 2023 16:29:28 &#43;0000</lastBuildDate><atom:link href="https://dsucceed.github.io/blog/tags/job-updates/" rel="self" type="application/rss+xml" /><item>
+    <title>Varian is Hiring For Software Engineer</title>
+    <link>https://dsucceed.github.io/blog/posts/varian-software-engineer/</link>
+    <pubDate>Wed, 10 May 2023 16:29:28 &#43;0000</pubDate>
+    <author>Sandeep Undrakonda</author>
+    <guid>https://dsucceed.github.io/blog/posts/varian-software-engineer/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/blog/varian.png" referrerpolicy="no-referrer">
+            </div>VarianCompany: Varian (Link At Bottom) Job Title: Software Developer - Oncology Solutions Job Description: As a Software Developer at Varian, a Siemens Healthineers Company, your role is vital in fighting cancer. We develop user-friendly and efficient software solutions for oncology. Our goal is to create a world without fear of cancer. You will work closely with a team of developers and testers to contribute to this mission. Strong programming skills in Java are a must, and experience with an additional language like Golang, Python, Kotlin, or JavaScript is a plus.]]></description>
+</item>
+</channel>
+</rss>
