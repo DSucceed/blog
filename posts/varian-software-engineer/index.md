@@ -1,6 +1,6 @@
 # Varian is Hiring For Software Engineer
 
-![Varian](https://i.ibb.co/Cs9q52q/varian.png "Varian")
+![Varian](https://i.ibb.co/C8rmYBq/pragma-Edge.png "Varian")
 # Company: Varian (Link At Bottom)
 
 ## Job Title: Software Developer - Oncology Solutions
@@ -28,7 +28,7 @@ As a Software Developer at Varian, a Siemens Healthineers Company, your role is 
 8. Good written and verbal communication skills in English.
 9. Strong teamwork and collaboration abilities.
 
-## Skill Set : Strong programming skills
+## Skill Set : 
 
 1. Strong programming skills
 2. Writing clean code
