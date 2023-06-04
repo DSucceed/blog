@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Mastering the Secrets of OOP: Inheritance, Polymorphism, Abstraction, and Encapsulation - DSucceed</title><meta name="Description" content="Object Oriented Programming 101"><meta property="og:title" content="Mastering the Secrets of OOP: Inheritance, Polymorphism, Abstraction, and Encapsulation" />
+<meta property="og:description" content="Object Oriented Programming 101" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dsucceed.github.io/blog/posts/oops_101/" /><meta property="og:image" content="https://dsucceed.github.io/firstLogo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-06-04T11:30:31+00:00" />
+<meta property="article:modified_time" content="2023-06-04T11:30:31+00:00" /><meta property="og:site_name" content="DSucceed" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dsucceed.github.io/firstLogo.png"/>
+
+<meta name="twitter:title" content="Mastering the Secrets of OOP: Inheritance, Polymorphism, Abstraction, and Encapsulation"/>
+<meta name="twitter:description" content="Object Oriented Programming 101"/>
+<meta name="application-name" content="Your One Stop For D Succeess">
+<meta name="apple-mobile-web-app-title" content="Your One Stop For D Succeess"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://dsucceed.github.io/blog/posts/oops_101/" /><link rel="prev" href="https://dsucceed.github.io/blog/posts/starter-pack/" /><link rel="stylesheet" href="/blog/css/style.min.cf6878db51c51b2d04ae155284a4403dbee8db33e16c066f954c95279c271fcd.css" integrity="sha256-z2h421HFGy0ErhVShKRAPb7o2zPhbAZvlUyVJ5wnH80="><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Mastering the Secrets of OOP: Inheritance, Polymorphism, Abstraction, and Encapsulation",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/dsucceed.github.io\/blog\/posts\/oops_101\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/dsucceed.github.io\/blog\/gettoit.png",
+                            "width":  1200 ,
+                            "height":  628 
+                        }],"genre": "posts","keywords": "tips, OOP\u0027s, software job basis","wordcount":  1690 ,
+        "url": "https:\/\/dsucceed.github.io\/blog\/posts\/oops_101\/","datePublished": "2023-06-04T11:30:31+00:00","dateModified": "2023-06-04T11:30:31+00:00","publisher": {
+            "@type": "Organization",
+            "name": "DSucceed","logo": {
+                    "@type": "ImageObject",
+                    "url": "https:\/\/dsucceed.github.io\/blog\/firstLogo.png",
+                    "width":  512 ,
+                    "height":  512 
+                }},"author": {
+                "@type": "Person",
+                "name": "Sandeep Undrakonda"
+            },"description": "Object Oriented Programming 101"
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/blog/" title="DSucceed"><img
+        class="lazyload logo"
+        src="/blog/svg/loading.min.svg"
+        data-src="/blog/firstLogo.png"
+        data-srcset="/blog/firstLogo.png, /blog/firstLogo.png 1.5x, /blog/firstLogo.png 2x"
+        data-sizes="auto"
+        alt="/blog/firstLogo.png"
+        title="/blog/firstLogo.png" width="512" height="512" />Dsucceed</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/blog/posts/"> Posts </a><a class="menu-item" href="/blog/tags/"> Tags </a><a class="menu-item" href="/blog/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/blog/" title="DSucceed"><img
+        class="lazyload logo"
+        src="/blog/svg/loading.min.svg"
+        data-src="/blog/firstLogo.png"
+        data-srcset="/blog/firstLogo.png, /blog/firstLogo.png 1.5x, /blog/firstLogo.png 2x"
+        data-sizes="auto"
+        alt="/blog/firstLogo.png"
+        title="/blog/firstLogo.png" width="512" height="512" />Dsucceed</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/blog/posts/" title="">Posts</a><a class="menu-item" href="/blog/tags/" title="">Tags</a><a class="menu-item" href="/blog/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Mastering the Secrets of OOP: Inheritance, Polymorphism, Abstraction, and Encapsulation</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/blog/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Sandeep Undrakonda</a></span>&nbsp;<span class="post-category">included in <a href="/blog/categories/object-oriented-programming/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Object Oriented Programming</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="04-06-2023">04-06-2023</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1690 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;8 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/blog/svg/loading.min.svg"
+        data-src="/blog/oops101.png"
+        data-srcset="/blog/oops101.png, /blog/oops101.png 1.5x, /blog/oops101.png 2x"
+        data-sizes="auto"
+        alt="/blog/oops101.png"
+        title="Object Oriented Programming 101" width="1200" height="628" /></div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#inheritance-passing-down-the-traits">Inheritance: Passing Down the Traits</a></li>
+    <li><a href="#polymorphism-embracing-many-forms">Polymorphism: Embracing Many Forms</a></li>
+    <li><a href="#abstraction-hiding-the-complexity">Abstraction: Hiding the Complexity</a></li>
+    <li><a href="#encapsulation-wrapping-it-up">Encapsulation: Wrapping It Up</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p><figure><a class="lightgallery" href="https://i.ibb.co/BZqZ2hX/oops101.png" title="oops 101" data-thumbnail="https://i.ibb.co/BZqZ2hX/oops101.png" data-sub-html="<h2>oops 101</h2><p>oops 101</p>">
+        <img
+            class="lazyload"
+            src="/blog/svg/loading.min.svg"
+            data-src="https://i.ibb.co/BZqZ2hX/oops101.png"
+            data-srcset="https://i.ibb.co/BZqZ2hX/oops101.png, https://i.ibb.co/BZqZ2hX/oops101.png 1.5x, https://i.ibb.co/BZqZ2hX/oops101.png 2x"
+            data-sizes="auto"
+            alt="https://i.ibb.co/BZqZ2hX/oops101.png" />
+    </a><figcaption class="image-caption">oops 101</figcaption>
+    </figure></p>
+<h1 id="inheritance-polymorphism-abstraction-and-encapsulation-pillars-of-object-oriented-programming">Inheritance, Polymorphism, Abstraction, and Encapsulation: Pillars of Object-Oriented Programming</h1>
+<p>Welcome to this fun and informative blog post where we&rsquo;ll dive into some important concepts of object-oriented programming: inheritance, polymorphism, abstraction, and encapsulation. These concepts form the foundation of modern software development and play a crucial role in creating reusable, modular, and maintainable code. So, let&rsquo;s get started and explore each concept in detail, with a touch of fun along the way!</p>
+<h2 id="inheritance-passing-down-the-traits">Inheritance: Passing Down the Traits</h2>
+<p>Imagine a world where cars are represented as objects in a Java program. In this world, we have a generic car called <code>GenericCar</code>. It has certain characteristics and behaviors that are common to all cars, such as the number of wheels and the ability to move in different directions. Here&rsquo;s an example of how it can be defined in code:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">GenericCar</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">noOfWheels</span> <span class="o">=</span> <span class="mi">4</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">moveW</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Flooring it Yo!&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">moveS</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Stopping&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">moveA</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Left Turn&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">moveD</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Right Turn&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>In the code above, we have a class called <code>GenericCar</code> that represents a generic car. It has a property <code>noOfWheels</code> set to 4, and several methods to perform different movements such as moving forward, stopping, turning left, and turning right.</p>
+<p>Now, let&rsquo;s say we have a specific type of car called <code>MercedesEQS</code> which is a hybrid model. This car inherits all the properties and behaviors of the <code>GenericCar</code> class but also has some additional features specific to the <code>MercedesEQS</code> model. Here&rsquo;s an example of how it can be defined:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MercesdesEQS</span> <span class="kd">extends</span> <span class="n">GenericCar</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">&#34;Mercedes EQS Hybrid&#34;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">hybrid</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Hybrid Mode Engaged! I Save Money!&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">sport</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Sport Mode Engaged! I Go Bruuuuuuuuuuuuuuuuuuuuuuu......!&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>In the code above, we have a class called <code>MercedesEQS</code> which extends the <code>GenericCar</code> class. It inherits the properties and behaviors of the <code>GenericCar</code> class, such as the <code>noOfWheels</code> property and the <code>moveW()</code>, <code>moveS()</code>, <code>moveA()</code>, and <code>moveD()</code> methods. Additionally, it has its own unique features, such as the <code>hybrid()</code> and <code>sport()</code> methods.</p>
+<p>Now, let&rsquo;s see how we can use inheritance to access the methods of the parent class and the additional methods of the child class. Here&rsquo;s an example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Using Inheritance&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">MercesdesEQS</span> <span class="n">model1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MercesdesEQS</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Features of &#34;</span> <span class="o">+</span> <span class="n">model1</span><span class="o">.</span><span class="na">name</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">model1</span><span class="o">.</span><span class="na">hybrid</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">model1</span><span class="o">.</span><span class="na">moveW</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">model1</span><span class="o">.</span><span class="na">sport</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>Output:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Using Inheritance
+</span></span><span class="line"><span class="cl">Features of Mercedes EQS Hybrid
+</span></span><span class="line"><span class="cl">Hybrid Mode Engaged! I Save Money!
+</span></span><span class="line"><span class="cl">Flooring it Yo!
+</span></span><span class="line"><span class="cl">Sport Mode Engaged! I Go Bruuuuuuuuuuuuuuuuuuuuuuu......!
+</span></span></code></pre></div><p>In the code above, we create an instance of the <code>MercedesEQS</code> class called <code>model1</code>. We can access the methods inherited</p>
+<p>from the <code>GenericCar</code> class, such as <code>moveW()</code>, as well as the additional methods specific to the <code>MercedesEQS</code> class, such as <code>hybrid()</code> and <code>sport()</code>. This demonstrates how inheritance allows child classes to inherit properties and behaviors from parent classes, providing code reusability and extensibility.</p>
+<h2 id="polymorphism-embracing-many-forms">Polymorphism: Embracing Many Forms</h2>
+<p>Polymorphism, derived from the Greek words &ldquo;poly&rdquo; meaning many and &ldquo;morphism&rdquo; meaning forms, refers to the ability of objects to take on different forms and perform the same tasks. It allows us to write code that can work with objects of different classes as long as they share a common interface or superclass.</p>
+<p>To illustrate polymorphism, let&rsquo;s consider a world where motorcycles are represented as objects in a Java program. We have a parent class called <code>GenericBike</code> that defines common characteristics and behaviors of all bikes. Here&rsquo;s an example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">GenericBike</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">numOfWheels</span> <span class="o">=</span> <span class="mi">2</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">start</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Ignition ON! Engine Running @ 1.5k RPM&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="nf">GenericBike</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="nf">GenericBike</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="s">&#34;generic bike&#34;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>In the code above, we have a class called <code>GenericBike</code> that represents a generic bike. It has a property <code>numOfWheels</code> set to 2 and a method <code>start()</code> to start the bike&rsquo;s engine. It also has two constructors, one that takes a <code>name</code> parameter and another default constructor.</p>
+<p>Now, let&rsquo;s define some child classes that inherit from the <code>GenericBike</code> class. These child classes represent specific bike models and provide their own implementations for the <code>start()</code> method. Here are a couple of examples:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Kawasaki</span> <span class="kd">extends</span> <span class="n">GenericBike</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="nf">Kawasaki</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">super</span><span class="o">(</span><span class="n">name</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">start</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Ignition ON! Engine Running @ 2.5K RPM&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">YamahaVmax</span> <span class="kd">extends</span> <span class="n">GenericBike</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="nf">YamahaVmax</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">super</span><span class="o">(</span><span class="n">name</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">start</span><span class="o">(</span><span class="kt">int</span> <span class="n">rpm</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Ignition ON! Engine Running @ &#34;</span> <span class="o">+</span> <span class="n">rpm</span> <span class="o">+</span> <span class="s">&#34; RPM&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>In the code above, we have two child classes: <code>Kawasaki</code> and <code>YamahaVmax</code>. Both classes extend the <code>GenericBike</code> class and provide their own implementations for the <code>start()</code> method. The <code>Kawasaki</code> class starts the engine at 2.5K RPM, while the <code>YamahaVmax</code> class allows specifying the RPM as a parameter.</p>
+<p>Now, let&rsquo;s see how polymorphism allows us to use objects of different classes interchangeably. Here&rsquo;s an example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Using Polymorphism
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">GenericBike</span> <span class="n">splender</span> <span class="o">=</span> <span class="k">new</span> <span class="n">GenericBike</span><span class="o">(</span><span class="s">&#34;Splender&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;I am &#34;</span> <span class="o">+</span> <span class="n">splender</span><span class="o">.</span><span class="na">name</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">splender</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">Kawasaki</span> <span class="n">z900</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Kawasaki</span><span class="o">(</span><span class="s">&#34;Z900&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;I am &#34;</span> <span class="o">+</span> <span class="n">z900</span><span class="o">.</span><span class="na">name</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">z900</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">YamahaVmax</span> <span class="n">vmax</span> <span class="o">=</span> <span class="k">new</span> <span class="n">YamahaVmax</span><span class="o">(</span><span class="s">&#34;Yamaha VMAX&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;I am &#34;</span> <span class="o">+</span> <span class="n">vmax</span><span class="o">.</span><span class="na">name</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">vmax</span><span class="o">.</span><span class="na">start</span><span class="o">(</span><span class="mi">1150</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p><em>Output</em>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">I am Splender
+</span></span><span class="line"><span class="cl">Ignition ON! Engine Running @ 1.5k RPM
+</span></span><span class="line"><span class="cl">I am Z900
+</span></span><span class="line"><span class="cl">Ignition ON! Engine Running @ 2.5K
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> RPM
+</span></span><span class="line"><span class="cl">I am Yamaha VMAX
+</span></span><span class="line"><span class="cl">Ignition ON! Engine Running @ <span class="m">1150</span> RPM
+</span></span></code></pre></div><p>In the code above, we create objects of different classes (<code>GenericBike</code>, <code>Kawasaki</code>, and <code>YamahaVmax</code>) but store them in variables of the parent class type (<code>GenericBike</code>). This allows us to treat them interchangeably and call the <code>start()</code> method without knowing the specific class of the object. This is the power of polymorphism, where objects can take on different forms while still exhibiting the same behavior.</p>
+<h2 id="abstraction-hiding-the-complexity">Abstraction: Hiding the Complexity</h2>
+<p>Abstraction is an essential concept in object-oriented programming that allows us to hide the internal implementation details of an object and provide a simplified interface for interacting with it. It focuses on the &ldquo;what&rdquo; rather than the &ldquo;how,&rdquo; enabling us to work with high-level concepts and ignore the intricate details.</p>
+<p>In our world of vehicles, let&rsquo;s consider an abstract class called <code>Vehicle</code> that defines the common properties and behaviors of all vehicles. Here&rsquo;s an example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Vehicle</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">numOfWheels</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="nf">Vehicle</span><span class="o">(</span><span class="kt">int</span> <span class="n">numOfWheels</span><span class="o">,</span> <span class="n">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="o">.</span><span class="na">numOfWheels</span> <span class="o">=</span> <span class="n">numOfWheels</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">start</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">stop</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Vehicle stopped!&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>In the code above, we have an abstract class called <code>Vehicle</code>. It has properties <code>numOfWheels</code> and <code>name</code>, as well as abstract method <code>start()</code> and a concrete method <code>stop()</code>. The <code>start()</code> method is declared as abstract, meaning it doesn&rsquo;t provide any implementation in the abstract class and must be implemented by any concrete subclasses.</p>
+<p>Now, let&rsquo;s create a concrete subclass called <code>Car</code> that extends the <code>Vehicle</code> class and provides its own implementation for the <code>start()</code> method. Here&rsquo;s an example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Car</span> <span class="kd">extends</span> <span class="n">Vehicle</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="nf">Car</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">super</span><span class="o">(</span><span class="mi">4</span><span class="o">,</span> <span class="n">name</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">start</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Car engine started!&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>In the code above, we have a <code>Car</code> class that extends the <code>Vehicle</code> class. It provides an implementation for the <code>start()</code> method, specific to a car&rsquo;s engine.</p>
+<p>Now, let&rsquo;s see how abstraction allows us to work with high-level concepts without worrying about the specific implementation details. Here&rsquo;s an example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Using Abstraction
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">Vehicle</span> <span class="n">vehicle</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Car</span><span class="o">(</span><span class="s">&#34;BMW&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;I am a &#34;</span> <span class="o">+</span> <span class="n">vehicle</span><span class="o">.</span><span class="na">name</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">vehicle</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">vehicle</span><span class="o">.</span><span class="na">stop</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>Output:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">I am a BMW
+</span></span><span class="line"><span class="cl">Car engine started!
+</span></span><span class="line"><span class="cl">Vehicle stopped!
+</span></span></code></pre></div><p>In the code above, we create an object of the <code>Car</code> class and store it in a variable of the <code>Vehicle</code> type. By doing this, we can interact with the object using the <code>Vehicle</code> interface, which includes the <code>start()</code> and <code>stop()</code> methods, without knowing the specific class or implementation details of the object. This allows us to work with abstract concepts and focus on what the object can do, rather than how it does it.</p>
+<h2 id="encapsulation-wrapping-it-up">Encapsulation: Wrapping It Up</h2>
+<p>Encapsulation is a fundamental principle of object-oriented programming that combines data and methods into a single unit called an object. It aims to protect the internal state of an object from external interference by providing controlled access to the object&rsquo;s properties and behaviors.</p>
+<p>In our vehicle world, let&rsquo;s consider a class called <code>Vehicle</code> that encapsulates the properties <code>numOfWheels</code> and <code>name</code> using private access modifiers. Here&rsquo;s an</p>
+<p>example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Vehicle</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kt">int</span> <span class="n">numOfWheels</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="nf">Vehicle</span><span class="o">(</span><span class="kt">int</span> <span class="n">numOfWheels</span><span class="o">,</span> <span class="n">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="o">.</span><span class="na">numOfWheels</span> <span class="o">=</span> <span class="n">numOfWheels</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getNumOfWheels</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">numOfWheels</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">name</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">start</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Vehicle started!&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">stop</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Vehicle stopped!&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>In the code above, we have a class called <code>Vehicle</code> with private properties <code>numOfWheels</code> and <code>name</code>. To provide controlled access to these properties, we have defined public getter methods (<code>getNumOfWheels()</code> and <code>getName()</code>) that allow other classes to retrieve their values. The <code>start()</code> and <code>stop()</code> methods provide public access to the vehicle&rsquo;s behaviors.</p>
+<p>Now, let&rsquo;s see how encapsulation helps protect the internal state of an object. Here&rsquo;s an example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Using Encapsulation
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">Vehicle</span> <span class="n">vehicle</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Vehicle</span><span class="o">(</span><span class="mi">4</span><span class="o">,</span> <span class="s">&#34;Tesla&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;I am a &#34;</span> <span class="o">+</span> <span class="n">vehicle</span><span class="o">.</span><span class="na">getName</span><span class="o">());</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;I have &#34;</span> <span class="o">+</span> <span class="n">vehicle</span><span class="o">.</span><span class="na">getNumOfWheels</span><span class="o">()</span> <span class="o">+</span> <span class="s">&#34; wheels&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">vehicle</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">vehicle</span><span class="o">.</span><span class="na">stop</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>Output:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">I am a Tesla
+</span></span><span class="line"><span class="cl">I have <span class="m">4</span> wheels
+</span></span><span class="line"><span class="cl">Vehicle started!
+</span></span><span class="line"><span class="cl">Vehicle stopped!
+</span></span></code></pre></div><p>In the code above, we create an object of the <code>Vehicle</code> class and use the public getter methods (<code>getName()</code> and <code>getNumOfWheels()</code>) to retrieve the values of its private properties. This allows us to access the necessary information about the object while keeping the internal state protected from direct external modification. Encapsulation helps maintain data integrity, improves code maintainability, and promotes modular development.</p>
+<p>And that wraps up our journey through the pillars of object-oriented programming: inheritance, polymorphism, abstraction, and encapsulation. These concepts provide a solid foundation for creating flexible, reusable, and well-organized code. Remember to have fun while exploring these concepts and continue building amazing software solutions!</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 04-06-2023</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/blog/posts/oops_101/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://dsucceed.github.io/blog/posts/oops_101/" data-title="Mastering the Secrets of OOP: Inheritance, Polymorphism, Abstraction, and Encapsulation" data-via="d_succeed7" data-hashtags="tips,OOP&#39;s,software job basis"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://dsucceed.github.io/blog/posts/oops_101/"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://dsucceed.github.io/blog/posts/oops_101/" data-title="Mastering the Secrets of OOP: Inheritance, Polymorphism, Abstraction, and Encapsulation" data-web><i class="fab fa-whatsapp fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/blog/tags/tips/">tips</a>,&nbsp;<a href="/blog/tags/oops/">OOP&#39;s</a>,&nbsp;<a href="/blog/tags/software-job-basis/">software job basis</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/blog/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/blog/posts/starter-pack/" class="prev" rel="prev" title="Cracking the Code: Your Ultimate Guide to Software Job Success!"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Cracking the Code: Your Ultimate Guide to Software Job Success!</a></div>
+</div>
+<div id="comments"></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.111.3">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/blog/" target="_blank">Sandeep Undrakonda</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"lightgallery":true,"search":{"algoliaAppID":"","algoliaIndex":"","algoliaSearchKey":"","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"}};</script><script type="text/javascript" src="/blog/js/theme.min.b0df51c2c57145081cc73960e9aa780e6f5f56d06cf4ef0f96da8ce1619d1e12.js" integrity="sha256-sN9RwsVxRQgcxzlg6ap4Dm9fVtBs9O8PltqM4WGdHhI="></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-2VGPL844H0');
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-2VGPL844H0" async></script></body>
+</html>

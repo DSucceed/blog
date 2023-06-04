@@ -4,7 +4,17 @@
         <link>https://dsucceed.github.io/blog/tags/tips/</link>
         <description>tips - Tag - DSucceed</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>dsucceeded@gmail.com (Sandeep Undrakonda)</managingEditor>
-            <webMaster>dsucceeded@gmail.com (Sandeep Undrakonda)</webMaster><lastBuildDate>Thu, 01 Jun 2023 19:21:39 &#43;0000</lastBuildDate><atom:link href="https://dsucceed.github.io/blog/tags/tips/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>dsucceeded@gmail.com (Sandeep Undrakonda)</webMaster><lastBuildDate>Sun, 04 Jun 2023 11:30:31 &#43;0000</lastBuildDate><atom:link href="https://dsucceed.github.io/blog/tags/tips/" rel="self" type="application/rss+xml" /><item>
+    <title>Mastering the Secrets of OOP: Inheritance, Polymorphism, Abstraction, and Encapsulation</title>
+    <link>https://dsucceed.github.io/blog/posts/oops_101/</link>
+    <pubDate>Sun, 04 Jun 2023 11:30:31 &#43;0000</pubDate>
+    <author>Sandeep Undrakonda</author>
+    <guid>https://dsucceed.github.io/blog/posts/oops_101/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/blog/oops101.png" referrerpolicy="no-referrer">
+            </div>oops 101Inheritance, Polymorphism, Abstraction, and Encapsulation: Pillars of Object-Oriented Programming Welcome to this fun and informative blog post where we&rsquo;ll dive into some important concepts of object-oriented programming: inheritance, polymorphism, abstraction, and encapsulation. These concepts form the foundation of modern software development and play a crucial role in creating reusable, modular, and maintainable code. So, let&rsquo;s get started and explore each concept in detail, with a touch of fun along the way!]]></description>
+</item>
+<item>
     <title>Cracking the Code: Your Ultimate Guide to Software Job Success!</title>
     <link>https://dsucceed.github.io/blog/posts/starter-pack/</link>
     <pubDate>Thu, 01 Jun 2023 19:21:39 &#43;0000</pubDate>
