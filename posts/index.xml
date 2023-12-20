@@ -4,7 +4,19 @@
         <link>https://dsucceed.github.io/blog/posts/</link>
         <description>All Posts | DSucceed</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>dsucceeded@gmail.com (Sandeep Undrakonda)</managingEditor>
-            <webMaster>dsucceeded@gmail.com (Sandeep Undrakonda)</webMaster><lastBuildDate>Sun, 04 Jun 2023 11:30:31 &#43;0000</lastBuildDate><atom:link href="https://dsucceed.github.io/blog/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>dsucceeded@gmail.com (Sandeep Undrakonda)</webMaster><lastBuildDate>Wed, 20 Dec 2023 12:37:33 &#43;0000</lastBuildDate><atom:link href="https://dsucceed.github.io/blog/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>TRYING</title>
+    <link>https://dsucceed.github.io/blog/posts/testing/</link>
+    <pubDate>Wed, 20 Dec 2023 12:37:33 &#43;0000</pubDate>
+    <author>Sandeep Undrakonda</author>
+    <guid>https://dsucceed.github.io/blog/posts/testing/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/blog/trying.png" referrerpolicy="no-referrer">
+            </div>THIS SHIT WORKING GREAT!!!! 🚀 Exciting Update Incoming! 🚀
+Hey everyone! 👋 Just a quick heads up – I&rsquo;ve been grinding away behind the scenes, working on some awesome updates for you. Get ready for a fresh wave of content coming your way soon! 🌟
+📚 What&rsquo;s in the pipeline? Brace yourselves for a deep dive into Data Structures and Algorithms (DSA) – we&rsquo;re going to tackle some coding problems together, level up our skills, and maybe even crack a few challenging algorithms.]]></description>
+</item>
+<item>
     <title>Mastering the Secrets of OOP: Inheritance, Polymorphism, Abstraction, and Encapsulation</title>
     <link>https://dsucceed.github.io/blog/posts/oops_101/</link>
     <pubDate>Sun, 04 Jun 2023 11:30:31 &#43;0000</pubDate>
@@ -20,16 +32,6 @@
     <pubDate>Thu, 01 Jun 2023 19:21:39 &#43;0000</pubDate>
     <author>Sandeep Undrakonda</author>
     <guid>https://dsucceed.github.io/blog/posts/starter-pack/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/blog/gettoit.png" referrerpolicy="no-referrer">
-            </div>Get To ItAre You a Student Desperately Wanting a Software Job? Make Sure You Tick These Boxes to Ace Your Software Job Interviews! Hey there, fellow students! So, you know you need a job, but you&rsquo;re not quite sure where to start, right? Don&rsquo;t worry, we&rsquo;ve got your back. We understand the struggle of being an ambitious student in India, feeling betrayed by your college&rsquo;s lack of placements and facing unfair competition.]]></description>
-</item>
-<item>
-    <title>TRY</title>
-    <link>https://dsucceed.github.io/blog/posts/testing/</link>
-    <pubDate>Thu, 01 Jun 2023 19:21:39 &#43;0000</pubDate>
-    <author>Sandeep Undrakonda</author>
-    <guid>https://dsucceed.github.io/blog/posts/testing/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/blog/gettoit.png" referrerpolicy="no-referrer">
             </div>Get To ItAre You a Student Desperately Wanting a Software Job? Make Sure You Tick These Boxes to Ace Your Software Job Interviews! Hey there, fellow students! So, you know you need a job, but you&rsquo;re not quite sure where to start, right? Don&rsquo;t worry, we&rsquo;ve got your back. We understand the struggle of being an ambitious student in India, feeling betrayed by your college&rsquo;s lack of placements and facing unfair competition.]]></description>
